@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="swl-WQ-A3x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fontCu.otf">
+            <string>Helsinkifjes-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="GBO-fu-EjQ">
+            <objects>
+                <viewController id="swl-WQ-A3x" customClass="MainMenuViewController" customModule="Obstacle_Run_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bnO-mx-PQQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5GM-px-Ju6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W0a-Ty-6Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aME-QG-h25">
+                                <rect key="frame" x="113" y="317" width="148" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Play (3).png"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="Kon-Aa-hvu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-2g-laT">
+                                <rect key="frame" x="142" y="537" width="90" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Shop.png"/>
+                                <connections>
+                                    <segue destination="uM4-tB-qGV" kind="show" id="jUv-Yl-ZR1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-kE-Fp8">
+                                <rect key="frame" x="0.0" y="156" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-p7-Im3">
+                                <rect key="frame" x="50" y="-38" width="275" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helsinkifjes-Regular" family="Helsinkifjes" pointSize="200"/>
+                                <color key="textColor" red="0.055851481854915619" green="0.011585566215217113" blue="0.011231557466089725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.50607401132583618" green="0.38600414991378784" blue="0.91082930564880371" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.090196078430000007" green="0.83529411760000005" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-5" height="-6"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHc-I3-yOp">
+                                <rect key="frame" x="16" y="537" width="90" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SoundNew.png"/>
+                                <connections>
+                                    <action selector="noMusic:" destination="swl-WQ-A3x" eventType="touchUpInside" id="Qgh-eR-XLG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwo-iO-bdt">
+                                <rect key="frame" x="269" y="537" width="90" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Share (2).png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28235294117647058" green="0.43137254901960786" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hws-Um-dk5"/>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="MFi-p7-Im3" id="Hmg-ip-xYZ"/>
+                        <outlet property="soundButton" destination="iHc-I3-yOp" id="IcB-xn-BtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HT6-cj-pYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2098.4000000000001" y="216.34182908545728"/>
+        </scene>
+        <!--First Page Controller-->
+        <scene sceneID="NqT-XO-CKX">
+            <objects>
+                <viewController restorationIdentifier="ShopPage1" storyboardIdentifier="ShopPage1" id="T2c-m1-HgP" customClass="FirstPageController" customModule="Obstacle_Run_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qfM-p0-6si"/>
+                        <viewControllerLayoutGuide type="bottom" id="AAA-O0-1RN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n1O-0y-xMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoneyEmb.png" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-Y6-JVN">
+                                <rect key="frame" x="106" y="20" width="250" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LEs-EN-Fr7"/>
+                                    <constraint firstAttribute="height" constant="75" id="ZDK-a1-RNv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADJ-j8-14z">
+                                <rect key="frame" x="20" y="125" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="87n-wG-2wO"/>
+                                    <constraint firstAttribute="width" constant="100" id="JhI-de-si6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" backgroundImage="playerSkin1UnLocked.png">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="HBD-gl-gp0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-AZ-N03">
+                                <rect key="frame" x="16" y="20" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="MWF-zB-9mR"/>
+                                    <constraint firstAttribute="height" constant="75" id="Mjd-H8-Jdp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="HomeBlue.png"/>
+                                <connections>
+                                    <segue destination="swl-WQ-A3x" kind="show" id="tZu-UJ-tO8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYn-tc-Iyq">
+                                <rect key="frame" x="138" y="125" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="L08-Wx-AOT"/>
+                                    <constraint firstAttribute="height" constant="149" id="XtX-ZC-Mvw"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin2Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="283-bT-OJS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AP-YP-NA0">
+                                <rect key="frame" x="20" y="453" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="F3M-tL-2DL"/>
+                                    <constraint firstAttribute="width" constant="100" id="HAh-yd-VhZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin7Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="Gom-bm-azM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-zH-kEe">
+                                <rect key="frame" x="138" y="453" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dzD-E8-h9o"/>
+                                    <constraint firstAttribute="height" constant="149" id="xWR-v9-rI8"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin8Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="IiS-cp-QzD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STX-yT-JSa">
+                                <rect key="frame" x="256" y="453" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Vhl-uO-Huc"/>
+                                    <constraint firstAttribute="height" constant="149" id="uA5-Xh-JOA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin9Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="a1c-1c-ubt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAr-l2-A4I">
+                                <rect key="frame" x="256" y="125" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EaF-sd-zpN"/>
+                                    <constraint firstAttribute="height" constant="149" id="nqG-A3-cgx"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin3Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="9q9-0Z-FEq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0P-iD-ghe">
+                                <rect key="frame" x="20" y="289" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Srx-tx-pX7"/>
+                                    <constraint firstAttribute="height" constant="149" id="itH-PI-yJS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin4Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="PcS-bJ-YWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBY-Ts-0Pr">
+                                <rect key="frame" x="138" y="289" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Cne-4G-2d4"/>
+                                    <constraint firstAttribute="height" constant="149" id="Vxg-To-M46"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin5Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="gYJ-1e-CMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQB-e9-Mzn">
+                                <rect key="frame" x="256" y="289" width="100" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="As2-9L-Q7U"/>
+                                    <constraint firstAttribute="height" constant="149" id="cJh-Zw-LYK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="playerSkin6Locked.png"/>
+                                <connections>
+                                    <action selector="changeSkinWithSender:" destination="T2c-m1-HgP" eventType="touchUpInside" id="p6V-k4-ywT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4678" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUH-bJ-iBN">
+                                <rect key="frame" x="203" y="4" width="125" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="3Pw-On-gbz"/>
+                                    <constraint firstAttribute="height" constant="82" id="FLT-vv-qci"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helsinkifjes-Regular" family="Helsinkifjes" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.055851481854915619" green="0.011585566215217113" blue="0.011231557466089725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="-3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.20679030879999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bRv-Y6-JVN" firstAttribute="centerX" secondItem="n1O-0y-xMe" secondAttribute="centerX" constant="43" id="0oo-22-2uI"/>
+                            <constraint firstItem="uQB-e9-Mzn" firstAttribute="centerY" secondItem="kBY-Ts-0Pr" secondAttribute="centerY" id="1ZS-Gi-bTq"/>
+                            <constraint firstItem="cbS-zH-kEe" firstAttribute="leading" secondItem="5AP-YP-NA0" secondAttribute="trailing" constant="18" id="Aph-3S-pvu"/>
+                            <constraint firstItem="cbS-zH-kEe" firstAttribute="top" secondItem="kBY-Ts-0Pr" secondAttribute="bottom" constant="15" id="CVZ-YQ-IL5"/>
+                            <constraint firstItem="bRv-Y6-JVN" firstAttribute="centerY" secondItem="n1O-0y-xMe" secondAttribute="centerY" constant="-276" id="E1C-Tt-VPB"/>
+                            <constraint firstItem="I0P-iD-ghe" firstAttribute="centerY" secondItem="kBY-Ts-0Pr" secondAttribute="centerY" id="Ek4-2m-Esx"/>
+                            <constraint firstItem="uQB-e9-Mzn" firstAttribute="leading" secondItem="kBY-Ts-0Pr" secondAttribute="trailing" constant="18" id="J1P-oa-bWk"/>
+                            <constraint firstItem="JUH-bJ-iBN" firstAttribute="centerY" secondItem="bRv-Y6-JVN" secondAttribute="centerY" constant="-12" id="K9Y-sW-yn5"/>
+                            <constraint firstItem="cbS-zH-kEe" firstAttribute="centerX" secondItem="kBY-Ts-0Pr" secondAttribute="centerX" id="LST-Tj-8qF"/>
+                            <constraint firstItem="kBY-Ts-0Pr" firstAttribute="centerY" secondItem="n1O-0y-xMe" secondAttribute="centerY" constant="30" id="Lco-Kc-SVZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="l7f-AZ-N03" secondAttribute="leading" id="O1c-cP-0Gb"/>
+                            <constraint firstItem="l7f-AZ-N03" firstAttribute="top" secondItem="qfM-p0-6si" secondAttribute="bottom" id="T4F-y4-pmn"/>
+                            <constraint firstItem="JUH-bJ-iBN" firstAttribute="centerX" secondItem="bRv-Y6-JVN" secondAttribute="centerX" constant="35" id="YTb-RM-5p5"/>
+                            <constraint firstItem="kBY-Ts-0Pr" firstAttribute="centerX" secondItem="n1O-0y-xMe" secondAttribute="centerX" id="atW-kr-9gd"/>
+                            <constraint firstItem="5AP-YP-NA0" firstAttribute="centerY" secondItem="cbS-zH-kEe" secondAttribute="centerY" id="bgL-YI-gjd"/>
+                            <constraint firstItem="UAr-l2-A4I" firstAttribute="leading" secondItem="EYn-tc-Iyq" secondAttribute="trailing" constant="18" id="cHj-ga-DTy"/>
+                            <constraint firstItem="EYn-tc-Iyq" firstAttribute="centerX" secondItem="kBY-Ts-0Pr" secondAttribute="centerX" id="ckQ-kV-9gI"/>
+                            <constraint firstItem="kBY-Ts-0Pr" firstAttribute="top" secondItem="EYn-tc-Iyq" secondAttribute="bottom" constant="15" id="fwv-2d-uep"/>
+                            <constraint firstItem="STX-yT-JSa" firstAttribute="leading" secondItem="cbS-zH-kEe" secondAttribute="trailing" constant="18" id="ibz-gS-VlO"/>
+                            <constraint firstItem="kBY-Ts-0Pr" firstAttribute="leading" secondItem="I0P-iD-ghe" secondAttribute="trailing" constant="18" id="tuc-eK-ZZc"/>
+                            <constraint firstItem="UAr-l2-A4I" firstAttribute="centerY" secondItem="EYn-tc-Iyq" secondAttribute="centerY" id="ui6-4u-nHf"/>
+                            <constraint firstItem="STX-yT-JSa" firstAttribute="centerY" secondItem="cbS-zH-kEe" secondAttribute="centerY" id="xcc-4K-Feo"/>
+                            <constraint firstItem="EYn-tc-Iyq" firstAttribute="leading" secondItem="ADJ-j8-14z" secondAttribute="trailing" constant="18" id="xqO-j4-y1j"/>
+                            <constraint firstItem="ADJ-j8-14z" firstAttribute="centerY" secondItem="EYn-tc-Iyq" secondAttribute="centerY" id="zqp-L5-WQM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="JUH-bJ-iBN" id="APW-vq-HQm"/>
+                        <outlet property="playerSkin1" destination="ADJ-j8-14z" id="uct-Wg-kaa"/>
+                        <outlet property="playerSkin2" destination="EYn-tc-Iyq" id="2Rm-dF-0S9"/>
+                        <outlet property="playerSkin3" destination="UAr-l2-A4I" id="RKy-wx-66Q"/>
+                        <outlet property="playerSkin4" destination="I0P-iD-ghe" id="ND7-xA-lbT"/>
+                        <outlet property="playerSkin5" destination="kBY-Ts-0Pr" id="HNN-hI-Zxl"/>
+                        <outlet property="playerSkin6" destination="uQB-e9-Mzn" id="PJn-QX-sTA"/>
+                        <outlet property="playerSkin7" destination="5AP-YP-NA0" id="L4k-xN-N9a"/>
+                        <outlet property="playerSkin8" destination="cbS-zH-kEe" id="9qa-Np-78d"/>
+                        <outlet property="playerSkin9" destination="STX-yT-JSa" id="SXE-3z-82H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrT-Vn-PJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2098.4000000000001" y="-1287.7061469265368"/>
+        </scene>
+        <!--Shop Page View Controller-->
+        <scene sceneID="pWu-DE-niP">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uM4-tB-qGV" customClass="ShopPageViewController" customModule="Obstacle_Run_Game" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qa-Vv-G5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1324" y="-547"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vzr-YK-kYk">
+            <objects>
+                <viewController restorationIdentifier="ShopPage2" storyboardIdentifier="ShopPage2" id="EjU-1F-3Lg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jMn-1S-Tf2"/>
+                        <viewControllerLayoutGuide type="bottom" id="mCa-3A-imT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k2J-7b-je7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.42505922870000001" green="0.093895137909999996" blue="0.72938701920000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfk-hj-lvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1418" y="-1288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PLo-sz-piD">
+            <objects>
+                <viewController restorationIdentifier="ShopPage3" storyboardIdentifier="ShopPage3" id="8cQ-HI-7Hc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBC-l7-9Vf"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqI-lK-ZSw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xim-qO-Qhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40809959730000001" green="0.7381809144" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VQ-pU-4EW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="-1288"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Obstacle_Run_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O6L-w0-p2k"/>
+                    <connections>
+                        <segue destination="swl-WQ-A3x" kind="show" identifier="push" id="AtY-ms-dlO"/>
+                        <segue destination="T2c-m1-HgP" kind="show" identifier="pushToShop" id="aNS-om-75G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HomeBlue.png" width="256" height="262"/>
+        <image name="MoneyEmb.png" width="736" height="219"/>
+        <image name="Play (3).png" width="255" height="262"/>
+        <image name="Share (2).png" width="255" height="261"/>
+        <image name="Shop.png" width="255" height="261"/>
+        <image name="SoundNew.png" width="255" height="261"/>
+        <image name="logo.png" width="375" height="95"/>
+        <image name="playerSkin1UnLocked.png" width="430" height="644"/>
+        <image name="playerSkin2Locked.png" width="430" height="644"/>
+        <image name="playerSkin3Locked.png" width="430" height="644"/>
+        <image name="playerSkin4Locked.png" width="430" height="644"/>
+        <image name="playerSkin5Locked.png" width="430" height="644"/>
+        <image name="playerSkin6Locked.png" width="430" height="644"/>
+        <image name="playerSkin7Locked.png" width="430" height="644"/>
+        <image name="playerSkin8Locked.png" width="430" height="644"/>
+        <image name="playerSkin9Locked.png" width="430" height="644"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tZu-UJ-tO8"/>
+    </inferredMetricsTieBreakers>
+</document>
